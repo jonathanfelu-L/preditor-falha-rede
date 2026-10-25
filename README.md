@@ -74,6 +74,32 @@ O orquestrador respeita as dependências. Se a API não devolver dados públicos
 - `pipeline/08_treino/data/avaliacao_teste.json`: métricas, classes e matriz de confusão do teste temporal.
 - `pipeline/08_treino/data/modelos/modelo_random_forest.joblib`: modelo salvo quando o treino é concluído.
 
+## Resultado da execução de 25/10/2026
+
+A execução local terminou as etapas de coleta/organização, auditoria de publicidade, baseline, rotulagem e treinamento. Os números abaixo foram copiados do `pipeline/08_treino/data/avaliacao_teste.json` e da saída do terminal desta execução; confira os dois arquivos antes de reutilizá-los.
+
+| Indicador | Resultado |
+|---|---:|
+| Auditoria de publicidade | Aprovada |
+| Âncoras | 30 |
+| Medições públicas listadas | 879 |
+| Pares sonda–âncora públicos | 140 (meta de referência: 150) |
+| Observações brutas | 480.812 |
+| Fluxos brutos / com baseline válido | 80 / 78 |
+| Linhas rotuladas | 235.386 |
+| Linhas de treino / teste | 188.537 / 46.774 |
+| Acurácia | 94,44% |
+| Acurácia balanceada | 71,34% |
+| F1 macro | 0,7887 |
+| F1 macro da referência de persistência | 0,7094 |
+| Recall da classe `FALHA` | 54,20% |
+
+A divisão descarta 75 linhas na fronteira temporal para não usar no treino uma observação cuja classe-alvo futura pertença ao teste. Esse descarte é intencional. O modelo prevê a classe da próxima medição; apesar da acurácia geral alta, identificou corretamente 581 de 1.072 casos reais de `FALHA`, por isso o recall de falhas continua sendo uma limitação importante.
+
+**Limitação de cobertura:** a execução encontrou 140 pares públicos, não os 150 do modelo de referência, e usou 78 fluxos com baseline válido. Não complete essa diferença com identificadores inventados. Os resultados são de histórico público retornado pela API e não provam 14 dias de coleta própria contínua.
+
+A interpretação completa, com a matriz de confusão, períodos e limitações, está em [`RELATORIO_EXECUCAO_2026-10-25.md`](RELATORIO_EXECUCAO_2026-10-25.md).
+
 ## Período de 14 dias
 
 Por padrão, o pipeline define duas janelas consecutivas de sete dias contando para trás a partir do momento da execução: A = sete dias anteriores a B; B = sete dias mais recentes. A API precisa já ter resultados públicos nas datas. Iniciar uma medição hoje não cria dados do passado. Antes de apresentar, confira os timestamps reais do dataset e os limites em `periodos.json`.
