@@ -1,0 +1,16 @@
+{
+  "timezone": "UTC",
+  "created_at": "2026-10-25T22:05:04Z",
+  "period_A": {
+    "start": "2026-10-11T22:05:04Z",
+    "stop": "2026-10-18T22:05:04Z",
+    "purpose": "baseline; não entra no treino"
+  },
+  "period_B": {
+    "start": "2026-10-18T22:05:04Z",
+    "stop": "2026-10-25T22:05:04Z",
+    "purpose": "dataset rotulado e treino"
+  },
+  "window_days": 14,
+  "note": "Intervalos [start, stop); o limite entre A e B não se sobrepõe. Os dados precisam já existir na API para o período histórico."
+}

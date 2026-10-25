@@ -1,0 +1,31 @@
+﻿anchor_id,hostname,ip_v4,country_code,city,probe_host_id,is_public,public_ipv4_global,is_active
+1164,br-poa-as19200,200.132.1.32,BR,Porto Alegre,6349,True,True,True
+1213,ae-dxb-as42473,37.252.245.94,AE,Dubai,6392,True,True,True
+3583,af-kbl-as138322,152.36.205.46,AF,Kabul,7278,True,True,True
+3972,am-evn-as51225,91.218.5.67,AM,Yerevan,7453,True,True,True
+2310,ao-lad-as37468,102.130.66.11,AO,Luanda,7239,True,True,True
+3066,ar-bhi-as28109,190.124.192.162,AR,Bahía Blanca,7099,True,True,True
+1138,at-szg-as39878,91.135.161.162,AT,Salzburg,6360,True,True,True
+1491,au-syd-as9268,119.17.170.244,AU,Sydney,6427,True,True,True
+4406,az-bak-as34170,212.47.157.17,AZ,Baku,7628,True,True,True
+1359,ba-sjj-as8670,195.130.61.208,BA,Sarajevo,6366,True,True,True
+1841,be-zav-as39923,109.68.162.233,BE,Zaventem,6737,True,True,True
+3921,bf-oua-as328010,196.49.19.41,BF,Ouagadougou,7427,True,True,True
+1419,bg-sof-as31287,85.187.20.236,BG,Sofia,6402,True,True,True
+4707,bh-amh-as51375,37.131.66.98,BH,Seef,7802,True,True,True
+4371,bo-cbb-as27839,200.58.72.14,BO,Cochabamba,7586,True,True,True
+2512,by-msq-as56740,31.130.200.18,BY,Minsk,6878,True,True,True
+1440,ca-van-as394256,192.30.89.87,CA,Vancouver,6775,True,True,True
+1075,ch-zrh-as559,130.59.80.2,CH,Zürich,6317,True,True,True
+1605,cl-scl-as64112,170.247.95.81,CL,Santiago de Chile,6485,True,True,True
+2934,cm-dla-as328913,196.49.84.188,CM,Douala,7050,True,True,True
+2493,hk-hkg-as12008,156.154.180.254,CN,Hong Kong,6982,True,True,True
+2475,co-bog-as12008,156.154.123.254,CO,Bogota,6978,True,True,True
+3714,cr-fil-as273147,154.197.77.19,CR,Filadelfia,7510,True,True,True
+1686,cz-prg-as39392,88.86.103.5,CZ,Prague,6544,True,True,True
+1154,de-fra-as203329,185.138.143.34,DE,Frankfurt am Main,6313,True,True,True
+4208,dj-jib-as30990,41.189.253.132,DJ,Djibouti,7532,True,True,True
+1310,dk-hjb-as3292,217.28.166.213,DK,Højbjerg,6952,True,True,True
+1339,do-ssu-as265721,45.65.244.254,DO,Sosua,6364,True,True,True
+1364,ec-uio-as61468,143.255.248.149,EC,Quito,6488,True,True,True
+2074,ee-tll-as51349,195.43.87.140,EE,Tallinn,6722,True,True,True

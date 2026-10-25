@@ -1,0 +1,125 @@
+{
+  "fonte": "RIPE Atlas REST API (medições públicas); sem dados sintéticos no dataset do treino",
+  "periodos_utc": {
+    "timezone": "UTC",
+    "created_at": "2026-10-25T22:05:04Z",
+    "period_A": {
+      "start": "2026-10-11T22:05:04Z",
+      "stop": "2026-10-18T22:05:04Z",
+      "purpose": "baseline; não entra no treino"
+    },
+    "period_B": {
+      "start": "2026-10-18T22:05:04Z",
+      "stop": "2026-10-25T22:05:04Z",
+      "purpose": "dataset rotulado e treino"
+    },
+    "window_days": 14,
+    "note": "Intervalos [start, stop); o limite entre A e B não se sobrepõe. Os dados precisam já existir na API para o período histórico."
+  },
+  "metodo_split": "temporal: primeiros 80% dos timestamps para treino, últimos 20% para teste; baseline calculado apenas em A",
+  "linhas_dataset": 235386,
+  "linhas_treino": 188537,
+  "linhas_teste": 46774,
+  "timestamp_inicio_teste_utc": "2026-10-24T12:16:04+00:00",
+  "timestamp_fim_teste_utc": "2026-10-25T22:03:40+00:00",
+  "classes_realmente_presentes": [
+    "FALHA",
+    "OK",
+    "RISCO"
+  ],
+  "features": [
+    "perda_pacotes_pct",
+    "latencia_ausente",
+    "latencia_ms",
+    "jitter_ms",
+    "rtt_sobre_p95",
+    "rtt_sobre_p99",
+    "rtt_amplitude_ms",
+    "ttl",
+    "latencia_media_3",
+    "latencia_max_3",
+    "latencia_media_6",
+    "latencia_max_6",
+    "latencia_media_12",
+    "latencia_max_12",
+    "perda_media_3",
+    "perda_max_3",
+    "perda_media_6",
+    "perda_max_6",
+    "perda_media_12",
+    "perda_max_12",
+    "perdas_consecutivas"
+  ],
+  "random_forest": {
+    "n_estimators": 200,
+    "min_samples_leaf": 5,
+    "max_features": "sqrt",
+    "random_state": 42
+  },
+  "acuracia": 0.9444135630906059,
+  "balanced_accuracy": 0.7133550668469981,
+  "macro_f1": 0.788705314408427,
+  "f1_por_classe": {
+    "OK": {
+      "precision": 0.9510756823532154,
+      "recall": 0.9929671720244324,
+      "f1-score": 0.971570074765465,
+      "support": 41093.0
+    },
+    "RISCO": {
+      "precision": 0.8594761171032358,
+      "recall": 0.6051204165762638,
+      "f1-score": 0.7102113572701808,
+      "support": 4609.0
+    },
+    "FALHA": {
+      "precision": 0.9281150159744409,
+      "recall": 0.5419776119402985,
+      "f1-score": 0.6843345111896348,
+      "support": 1072.0
+    },
+    "accuracy": 0.9444135630906059,
+    "macro avg": {
+      "precision": 0.912888938476964,
+      "recall": 0.7133550668469982,
+      "f1-score": 0.788705314408427,
+      "support": 46774.0
+    },
+    "weighted avg": {
+      "precision": 0.9415234475519324,
+      "recall": 0.9444135630906059,
+      "f1-score": 0.9392333309956559,
+      "support": 46774.0
+    }
+  },
+  "matriz_confusao": {
+    "ordem_classes": [
+      "OK",
+      "RISCO",
+      "FALHA"
+    ],
+    "linhas_classe_real_colunas_classe_prevista": [
+      [
+        40804,
+        283,
+        6
+      ],
+      [
+        1781,
+        2789,
+        39
+      ],
+      [
+        318,
+        173,
+        581
+      ]
+    ]
+  },
+  "persistencia": {
+    "acuracia": 0.9111472185402146,
+    "macro_f1": 0.7093722433623694
+  },
+  "alerta": "Métricas válidas apenas para as medições que a API devolveu. Confira o número de fluxos, a duração real e a distribuição de classes antes de usar na apresentação.",
+  "hash_sha256_modelo": "f03674ef61e6a24eb7fe496194038ef8512fbe6756d18c12b80c03f95eae89ec"
+}

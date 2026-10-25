@@ -1,0 +1,18 @@
+{
+  "fonte": "RIPE Atlas REST API; validação por flags is_public e endereços IPv4 globais",
+  "publicidade_validada": true,
+  "erros": [],
+  "avisos": [
+    "Existem 140 pares públicos distintos; o modelo de referência mostra 150 (30 âncoras × 5 sondas). Não complete a diferença com IDs inventados."
+  ],
+  "contagens": {
+    "ancoras": 30,
+    "paises_distintos": 30,
+    "medicoes_publicas": 879,
+    "pares_sonda_ancora_publicos_distintos": 140,
+    "linhas_vinculo_por_medicao": 178,
+    "observacoes_reais": 480812,
+    "sondas_distintas": 74
+  },
+  "regra": "Nenhuma medição privada, IP reservado/privado, sonda não pública ou amostra sintética pode entrar no treino."
+}

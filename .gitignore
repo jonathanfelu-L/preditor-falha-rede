@@ -1,0 +1,13 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+**/cache/
+**/fluxo_bruto.csv
+**/fluxo_bruto.csv.gz
+**/sessao_stream.json
+
+# Modelo treinado grande: manter localmente
+*.joblib
